@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/valida.js"></script>
+    <title>Form Contato</title>
+</head>
+<body>
+<main> 
+    <div class="form-box">
+        <form action="contato.php" method="GET" name="formulario" onSubmit="return enviarformulario();"> 
+            <div>
+                <h1>Contato</h1>
+            </div>
+            <div>
+                <input type="text" name="nome" placeholder="Nome*" class="form-input">
+            </div>
+            <div>
+                <input type="text" name="email" placeholder="E-mail*" class="form-input">
+            </div>
+            <div>
+                <input type="text" name="telefone" placeholder="Telefone*" class="form-input">
+            </div>
+            <div>
+                <textarea class="form-msg" name="mensagem" rows="3" cols="30" 
+                placeholder="Deixe sua mensagem"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" class="form-btn">
+            </div>
+
+        </form>
+    </div>
+</main>
+</body>
+</html>
